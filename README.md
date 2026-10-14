@@ -4,6 +4,8 @@ A GNOME Shell extension that puts a to-do list and a scratch note in a top-bar d
 
 ![Quick Notes in the top bar, with the number of open tasks](screenshots/panel.png)
 
+![To-do list and notes in the menu](screenshots/menu.png)
+
 - Type a task and press Enter to add it
 - Tick the checkbox to finish it; finished tasks move to the bottom
 - Hover a task and click × to delete it, or use "Clear done"
