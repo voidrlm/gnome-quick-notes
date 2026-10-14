@@ -46,6 +46,16 @@ function iconButton(iconName, styleClass, onClick) {
     return b;
 }
 
+// Only the line of text inside an St.Entry takes clicks; make a click anywhere
+// in the box focus it, with the cursor at the end.
+function focusOnClick(entry) {
+    entry.connect('button-press-event', () => {
+        entry.clutter_text.grab_key_focus();
+        entry.clutter_text.set_cursor_position(-1);
+        return Clutter.EVENT_STOP;
+    });
+}
+
 export default class QuickNotes extends Extension {
     enable() {
         this._data = load();
@@ -90,6 +100,7 @@ export default class QuickNotes extends Extension {
         box.add_child(head);
 
         this._entry = new St.Entry({hint_text: 'Add a task and press Enter', style_class: 'qn-entry', can_focus: true, x_expand: true});
+        focusOnClick(this._entry);
         this._entry.clutter_text.connect('activate', () => {
             const text = this._entry.text.trim();
             if (!text) return;
@@ -120,6 +131,7 @@ export default class QuickNotes extends Extension {
         box.add_child(new St.Label({text: 'Notes', style_class: 'qn-title qn-head'}));
 
         this._note = new St.Entry({hint_text: 'Write anything…', style_class: 'qn-note', can_focus: true, x_expand: true});
+        focusOnClick(this._note);
         const ct = this._note.clutter_text;
         // Multi-line: Enter inserts a newline instead of "activating".
         ct.single_line_mode = false;
