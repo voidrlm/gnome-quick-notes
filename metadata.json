@@ -1,0 +1,6 @@
+{
+  "uuid": "quick-notes@arjun",
+  "name": "Quick Notes",
+  "description": "A to-do list and a scratch note in a top-bar dropdown, saved automatically.",
+  "shell-version": ["50"]
+}

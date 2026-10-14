@@ -1,0 +1,25 @@
+.qn-box { spacing: 2px; }
+.qn-count { font-size: 0.85em; font-weight: bold; font-feature-settings: "tnum"; margin-right: 2px; }
+
+.qn-menu { min-width: 340px; max-width: 340px; }
+.qn-section { spacing: 6px; }
+.qn-head { padding-bottom: 2px; }
+.qn-title { font-weight: bold; }
+.qn-link { font-size: 0.85em; padding: 2px 8px; border-radius: 99px; color: rgba(255,255,255,0.6); }
+.qn-link:hover { background-color: rgba(255,255,255,0.1); color: #ffffff; }
+
+.qn-entry { border-radius: 10px; padding: 6px 10px; }
+.qn-scroll { max-height: 260px; }
+.qn-list { spacing: 2px; }
+.qn-empty { padding: 4px 2px; color: rgba(255,255,255,0.5); font-style: italic; }
+
+.qn-row { spacing: 8px; padding: 3px 4px; border-radius: 8px; }
+.qn-row:hover { background-color: rgba(255,255,255,0.07); }
+.qn-check { border-radius: 6px; padding: 2px; color: rgba(255,255,255,0.8); }
+.qn-check:hover { color: #78aeed; }
+.qn-text.done { color: rgba(255,255,255,0.45); }
+.qn-del { border-radius: 99px; padding: 3px; color: transparent; }
+.qn-row:hover .qn-del { color: rgba(255,255,255,0.5); }
+.qn-del:hover, .qn-row:hover .qn-del:hover { background-color: #c01c28; color: #ffffff; }
+
+.qn-note { border-radius: 10px; padding: 8px 10px; min-height: 90px; }
