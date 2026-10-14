@@ -2,6 +2,8 @@
 
 A GNOME Shell extension that puts a to-do list and a scratch note in a top-bar dropdown. Everything is saved automatically.
 
+![Quick Notes in the top bar, with the number of open tasks](screenshots/panel.png)
+
 - Type a task and press Enter to add it
 - Tick the checkbox to finish it; finished tasks move to the bottom
 - Hover a task and click × to delete it, or use "Clear done"
@@ -11,6 +13,12 @@ A GNOME Shell extension that puts a to-do list and a scratch note in a top-bar d
 Data is stored in `~/.local/share/quick-notes/notes.json`.
 
 Requires GNOME Shell 50.
+
+<details><summary>Where it sits in the top bar</summary>
+
+![The whole top bar](screenshots/top-bar.png)
+
+</details>
 
 ## Install
 
